@@ -1,0 +1,195 @@
+:root{
+    --colorprimario : #f9db63;
+    --colorsecundario : #7df1c4;
+    --colorterciario : #fffef9;
+    --fontfamily : Arial, Helvetica, sans-serif;
+}
+/* Estilos Menu (index) */
+body{
+    background-color: var(--colorsecundario);
+}
+nav{
+    background-color: var(--colorterciario);
+    padding: 40px;
+}
+.menu {
+    margin: 0 15px;
+    font-size: 20px;
+    padding: 10px;
+    transition: color 0.3s;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu > li > a{
+display: block;
+padding: 15px 20px;
+text-decoration: none;
+color: var(--colorprimario);
+}
+.menu > li:hover{
+background-color: var(--colorsecundario);
+}
+.menu:hover{
+    color: var(--colorprimario);
+    font-weight: bold;
+    font-size: 25px;
+}
+.menudesplegable{
+    display: none;
+    position: absolute;
+    width: 200px;
+    background-color: var(--colorterciario);
+    list-style: none;
+}
+.menu li:hover .menudesplegable{
+    display: block;
+}
+.menudesplegable li:hover{
+    background-color: var(--colorterciario);
+}
+.menudesplegable li a{
+    display: block;
+    color: var(--colorprimario);
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+.submenu{
+    margin: 0 80px;
+    font-size: 20px;
+    padding: 15px;
+    transition: color 0.3s;
+    text-decoration: none;
+    color: var(--colorprimario);
+}
+.submenu:hover{
+    color: var(--colorprimario);
+    font-weight: bold;
+    font-size: 25px;
+}
+.titulo{
+    color: var(--colorterciario);
+    text-align: center;
+    background-color: var(--colorprimario);
+    padding: auto;
+}
+
+.texto{
+color: var(--colorterciario);
+font-family: var(--fontfamily);
+text-align: justify;
+font-size: 20px;
+}
+/* Estilos de Nosotros */
+.titulon{
+    color: var(--colorprimario);
+    text-align: center;
+    font-size: 40px;
+}
+.texton{
+    color: var(--colorterciario);
+    font-family: var(--fontfamily);
+    text-align: justify;
+    font-size: 20px;
+    margin: 30px;
+}
+.imagen{
+    text-align: center;
+}
+/* Estilos Servicios y productos */
+.nav1{
+    background-color: var(--colorsecundario);
+    text-align: center;
+    padding: 5px;
+}
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--colorterciario);
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    text-align: center;
+}
+.producto{
+    border: 2px solid var(--colorterciario);
+    text-align: center;
+    background-color: var(--colorprimario);
+}
+.sub{
+    background-color: var(--colorprimario);
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--colorterciario);
+}
+.textos{
+    color: var(--colorterciario);
+    text-align: justify;
+    margin: 5px;
+    font-size: 18px;
+}
+.precios{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--colorterciario);
+}
+.wpp-enlace{
+    background-color: var(--colorprimario);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--colorterciario);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Estilos Contactos */
+.tituloconta{
+    color: var(--colorprimario);
+    font-size: 50px;
+}
+.conta{
+    color: var(--colorterciario);
+    font-size: 20px;
+    font-family: var(--fontfamily);
+}
+.p {
+    font-size: 20px; 
+    color: var(--colorterciario); 
+}
+select {
+    padding: 10px; 
+    margin-top: 15px; 
+}
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: var(--colorterciario);
+    font-size: 25px;
+}
+/* Media queries */
+@media (min-width:300px) and (max-width:600px){
+    .contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    }
+    .titulo{
+        display: grid;
+        text-align: center;
+    }
+    .menu{
+        display: grid;
+        text-align: center;
+    }
+    .submenu{
+        display: flex;
+        text-align: center;
+    }
+    .imagen{
+        width: 100%;
+    }
+    .direccion{
+        width: 100%;
+    }
+}
